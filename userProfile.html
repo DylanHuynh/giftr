@@ -1,259 +1,57 @@
-a{
-  color: white;
-  font-size: 25px;
-}
-h2{
-  color: #FF7C7C;
-  font-size: 40px;
-}
-
-h1{
-  color: white;
-  font-size: 130px;
-  margin-left: 100px;
-}
-h3{
-  color: white;
-  font-size: 75px;
-  text-align: center;
-  margin-right: 50%;
-  margin-left: 50px;
-}
-h5{
-  margin-top: 150px;
-  margin-left: 20px;
-  color: white;
-  font-size: 100px;
-  text-align: center;
-  
-}
-
-
-
-body{
-  background: #c54245;
-  font-family: Raleway;
-}
-
-.button{
-color: white;
-font-family: Raleway;
-background: #930000;
-border: none;
-border-radius: 10px;
-width: 125px;
-height: 50px;
-}
-
-
-.horizontal-container{
-  margin-left: 50px;
-  display: flex;
-  flex: 60%;
-
-}
-
-.intro{
-  color: #FFFFFF;
-}
-
-.description{
-  margin-top: 100px;
-  margin-left: 100px;
-}
-
-input[type=password], .text{
-  width: 90%;
-  padding: 13px 13px;
-
-  align-self: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  
-}
-
-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.input-container{
-  display: flex;
-  align-self: center;
-  align-items: center;
-  width: 411px;
-  height: 533px;
-  margin-top: 125px;
-  margin-left: 200px;
-
-  background: #FF7C7C;
-  align-content: center;
-  padding: 10px;
-  padding-top: 40px;
-  border-radius: 33px;
-  flex-direction: column;
-  color: white;
-}
-
-label{
-  font-size: 24px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-*{
-  box-sizing: border-box;
-}
-.col{
-  float: left;
-  height: 850px;
-}
-.first{
-   
-  width: 45%;
-}
-.second{
-  margin-top: -10px;
-  width: 55%;
-  background-color: #FF7C7C; 
-}
-
-.profileFirst{
-  width: 30%;
-
-}
-.profileSecond{
-  width: 70%;
-  background-color: #FF7C7C; 
-  
-}
-.row::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .col {
-    width: 100%;
-  }
-}
-
-
-#login{
-
-font-size: 15px;
-margin-top: 20px;
-
-}
-#dont{
-  margin-top: 50px;
-  text-align: center;
-}
-
-#signup{
-  margin-top: 25px;
-}
-
-
-.typewriter {
-    font-family: Raleway, monospace;
-	display: inline-block;
-}
-
-.typewriter-text {
-    display: inline-block;
-  	overflow: hidden;
-    letter-spacing: 2px;
- 	animation: typing 4s steps(40, end), blink .5s step-end infinite;
-    white-space: nowrap;
-    font-size: 40px;
-    font-weight: 700;
-    border-right: 4px solid #930000;
-    box-sizing: border-box;
-}
-
-@keyframes typing {
-    from { 
-        width: 0% 
-    }
-    to { 
-        width: 40% 
-    }
-}
-
-@keyframes blink {
-    from, to { 
-        border-color: transparent 
-    }
-    50% { 
-        border-color:  #930000; 
-    }
-}
-
-.pad-input{
-  margin-left: 100px;
-  margin-right: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 390px;
-  padding: 13px 13px;
-  font-family: Raleway;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-
-}
-.pad-label{
-  color: white;
-  padding-left: 100px;
-  padding-top: 20px;
-}
-
-.interest{
-  margin-left: 100px;
-  margin-right: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 330px;
-  padding: 13px 13px;
-  padding-left: 40px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-
-.add{
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 50px;
-  padding: 13px 13px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.vertical-padding{
-  margin-top: 80px;
-}
-.more-vertical-padding{
-  margin-top: 150px;
-}
-
-.next{
-  margin-left: 370px;
-}
-
-
-.getting-started-container {
-  text-align: center
-}
-
-#calendar{
-  margin-top: 20px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <title>Giftr</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+<script src="script.js"></script>
+<div class="row">
+  <div class="col profileFirst">
+    <h3>Friends </h3>
+    <div style="height:500px;width:350px; overflow:auto;">
+      <ul>
+        <a id = 'timmy' href='personProfile.html'>Timmy</a><br>
+        <a href='personProfile.html'>Mia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a><br>
+        <a>kimia</a>
+      </ul>
+    </div>
+  </div>
+  <div class="col profileSecond">
+    <iframe src="https://calendar.google.com/calendar/b/6/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%2333B679&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH" style="border-width:0" width="1000" height="750" frameborder="0" scrolling="no" id = "calendar" ></iframe>
+  </div>
+</div>
+</body>
+</html>
