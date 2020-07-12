@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <title>Giftr</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="script.js"></script>
+    <div class="row">
+      <div class="col first">
+        <h5>Sign Up</h5>
+      </div>
+      <div class="col second">
+        <form class="more-vertical-padding">
+          <label class="pad-label" for="email">Email</label>
+          <br>
+          <input class="pad-input" type="text" id="email" placeholder="i.e. - john@doe.com">
+          <br>
+          <label class="pad-label" for="password">Password</label>
+          <br>
+          <input class="pad-input" type="text" id="password" placeholder="i.e. - 1735fH6">
+          <br>
+         <button class="button pad-input" style="border: none" type="button" id="signUpSubmit">Submit</button>
+        </form>
+        <button class="button pad-input" style="border: none" type="submit" class="button" id="goToLogin" onclick="window.location='/index.html';">Go To Login</button>
+      </div>
+    </div>
+  </body>
+</html>
